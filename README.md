@@ -19,3 +19,5 @@ Open `index.html` in a modern browser. It is a static site and does not need a b
 The analysis and support content is sample guidance. This prototype does not diagnose crop damage, verify current scheme availability or eligibility, capture GPS, submit a claim, or send report data to a server. Confirm decisions and current requirements with the local agriculture office.
 
 The voice input feature uses the browser's built-in speech recognition when available; browser support and Kannada recognition vary. The microphone is only requested after the user presses **Speak instead**.
+
+The hero landscape photo is by [Abdul Muiz Khan on Unsplash](https://unsplash.com/photos/a-green-field-with-trees-and-a-blue-sky-X9Ql-wHV3TQ), used under the [Unsplash License](https://unsplash.com/license).

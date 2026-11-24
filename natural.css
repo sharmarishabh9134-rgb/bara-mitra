@@ -263,3 +263,91 @@ footer {
   .hero-art { border-width: 6px; }
   .report-aside { grid-template-columns: 35px 1fr; }
 }
+
+/* Full-width farm scene: the landscape is the hero background, not a card illustration. */
+.hero {
+  min-height: 680px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #23492f;
+  background-image: url("https://images.unsplash.com/photo-1715519156243-ed2027d6c1a6?auto=format&fit=crop&w=2200&q=85");
+  background-position: center 56%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hero::before {
+  inset: 0;
+  height: auto;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, #102d20e8 0%, #173b28d9 34%, #1b402d9c 55%, #173a2938 78%, #173a291c 100%),
+    linear-gradient(0deg, #132d1cc7 0%, transparent 33%, #162f1c22 100%);
+  box-shadow: inset 0 -2px 0 #9b7048;
+  pointer-events: none;
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  inset: auto 0 0;
+  height: 12px;
+  z-index: 2;
+  background: repeating-linear-gradient(0deg, #775337 0 2px, #9c724b 3px 5px, #674832 6px 8px);
+  box-shadow: 0 -3px 12px #0c261a55, inset 0 2px 2px #d9b17a65;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 3;
+  width: min(590px, 58%);
+  max-width: 590px;
+  padding: 24px 0 38px;
+}
+
+.hero .eyebrow { color: #e6e5c8; }
+.hero .sun-icon { color: #fff0bc; background: #fff4d42e; box-shadow: inset 0 1px 0 #fff5; }
+.hero h1 { color: #fffdf3; text-shadow: 0 2px 15px #071d14a3; }
+.hero h1 em { color: #d6e3a2; }
+.hero-copy > p { color: #f0f1e6; text-shadow: 0 1px 7px #071d14a3; }
+.hero .trust-note { color: #e1e7d7; }
+.hero .primary-button {
+  background: linear-gradient(145deg, #9b7048, #68482f 78%);
+  border-color: #c09a67;
+  border-bottom-color: #4c3424;
+  box-shadow: 0 5px 0 #4c3424, 0 11px 22px #071d1480, inset 0 1px 0 #fff5;
+}
+.hero .primary-button:hover {
+  background: linear-gradient(145deg, #ad8054, #795638 78%);
+  box-shadow: 0 3px 0 #4c3424, 0 8px 18px #071d1480, inset 0 1px 0 #fff6;
+}
+
+/* Hide the old pale CSS vignette; the farm photo now fills the complete hero. */
+.hero-art { display: none; }
+
+@media (max-width: 800px) {
+  .hero {
+    min-height: 690px;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    background-position: 59% center;
+  }
+  .hero-copy { width: min(560px, 100%); }
+  .hero::before {
+    background:
+      linear-gradient(90deg, #102d20e8 0%, #173b28d0 55%, #173a296c 100%),
+      linear-gradient(0deg, #132d1cc7 0%, transparent 45%, #162f1c40 100%);
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: 690px;
+    padding: 45px 22px 54px;
+    background-position: 60% center;
+  }
+  .hero-copy { width: 100%; padding: 10px 0 22px; }
+  .hero h1 { font-size: 42px; letter-spacing: -1.8px; }
+  .hero-copy > p { max-width: 420px; }
+}
