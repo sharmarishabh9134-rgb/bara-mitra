@@ -7,6 +7,15 @@ const copy = {
   }
 };
 
+Object.assign(copy.en, {
+  privacy:"Your report stays on this device. Google Maps gets your area only when you open a map search.",
+  photoGuideBadge:"PHOTO GUIDANCE · DEMO", photoGuideTitle:"Need help deciding what to do first?", photoGuideIntro:"Choose the closest match and get a sample set of urgent next steps for your field.", scenarioLabel:"What are you seeing?", scenarioDry:"Severe wilting or dry leaves", scenarioPests:"Pests, spots, or damage on leaves", scenarioWater:"Water standing in the field", scenarioRapid:"Damage spreading quickly", getPhotoSteps:"Get urgent next steps", aiDemoNote:"Prototype demo: your photo stays on this device. No AI model is connected yet, so this sample guidance is based on your selection.", addPhotoForGuide:"Add a crop photo to start", sampleResponse:"SAMPLE RESPONSE", nearbyKicker:"LOCAL FARM SUPPORT", nearbyTitleText:"Find farmers and shops near you", nearbyIntro:"Search local farmer groups and fertilizer shops around your village or taluk.", nearbyAreaLabel:"Village or taluk", searchNearby:"Update map searches", farmerGroups:"Nearby farmers and farmer groups", farmerGroupsCopy:"Find farmers, cooperatives, and producer organisations in your area.", fertilizerShops:"Fertilizer and seed shops", fertilizerShopsCopy:"Search for nearby farm-input shops and check stock before travelling.", openMap:"Open map results", mapPrivacy:"Google Maps opens in a new tab. Your entered area is included in the search only when you open a map link. Listings may be incomplete; call ahead to confirm.", mapReady:"Map searches updated. Choose a farmer group or shop below.", needPhoto:"Add a crop photo first to start the photo-guidance demo.", guidanceDryTitle:"Possible water stress", guidanceDrySummary:"These are general first steps for a drying or wilting crop. They are not a diagnosis.", guidanceDry1:"Take photos of affected and healthy plants, and note when symptoms began.", guidanceDry2:"Check soil moisture and recent rainfall before changing irrigation.", guidanceDry3:"If damage is spreading, contact your local agriculture officer and ask about reporting timelines.", guidancePestsTitle:"Possible pest or leaf damage", guidancePestsSummary:"The photo is not being diagnosed in this demo. Avoid applying a chemical until the cause is confirmed.", guidancePests1:"Photograph the whole plant and close-ups of both sides of affected leaves.", guidancePests2:"Keep a small sample in a sealed bag for an agriculture officer, if safe to do so.", guidancePests3:"Ask an agriculture officer to identify the cause and recommend a suitable treatment.", guidanceWaterTitle:"Standing water in the field", guidanceWaterSummary:"Waterlogging can harm crops. Use local advice before moving water or applying inputs.", guidanceWater1:"Keep people and animals away from electrical lines, pumps, and contaminated water.", guidanceWater2:"Record the affected area and when the water began collecting.", guidanceWater3:"Contact your local agriculture office for drainage and crop-recovery advice.", guidanceRapidTitle:"Rapid crop damage needs local review", guidanceRapidSummary:"A quick change can have several causes. This demo cannot tell which one is present.", guidanceRapid1:"Photograph the field and note the date, weather, and any recent inputs used.", guidanceRapid2:"Avoid spraying or mixing chemicals until the cause has been identified.", guidanceRapid3:"Contact an agriculture officer promptly; check your insurance policy for reporting deadlines."
+});
+Object.assign(copy.kn, {
+  privacy:"ನಿಮ್ಮ ವರದಿ ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತದೆ. ನಕ್ಷೆ ಹುಡುಕಾಟ ತೆರೆದಾಗ ಮಾತ್ರ ನಿಮ್ಮ ಪ್ರದೇಶ ಗೂಗಲ್ ನಕ್ಷೆಗೆ ಹೋಗುತ್ತದೆ.",
+  photoGuideBadge:"ಫೋಟೋ ಮಾರ್ಗದರ್ಶನ · ಮಾದರಿ", photoGuideTitle:"ಮೊದಲು ಏನು ಮಾಡಬೇಕು ಎಂದು ತಿಳಿಯಲು ಸಹಾಯ ಬೇಕೇ?", photoGuideIntro:"ನಿಮ್ಮ ಹೊಲಕ್ಕೆ ತಕ್ಕ ಆಯ್ಕೆಯನ್ನು ಮಾಡಿ; ಮಾದರಿ ತುರ್ತು ಮುಂದಿನ ಹೆಜ್ಜೆಗಳನ್ನು ನೋಡಿ.", scenarioLabel:"ನಿಮಗೆ ಏನು ಕಾಣುತ್ತಿದೆ?", scenarioDry:"ತೀವ್ರವಾಗಿ ಬಾಡುವುದು ಅಥವಾ ಒಣ ಎಲೆಗಳು", scenarioPests:"ಕೀಟ, ಕಲೆ ಅಥವಾ ಎಲೆ ಹಾನಿ", scenarioWater:"ಹೊಲದಲ್ಲಿ ನಿಂತ ನೀರು", scenarioRapid:"ಹಾನಿ ಬೇಗನೆ ಹರಡುತ್ತಿದೆ", getPhotoSteps:"ತುರ್ತು ಮುಂದಿನ ಹೆಜ್ಜೆಗಳನ್ನು ನೋಡಿ", aiDemoNote:"ಮಾದರಿ ಪ್ರದರ್ಶನ: ನಿಮ್ಮ ಫೋಟೋ ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತದೆ. ಇನ್ನೂ AI ಮಾದರಿ ಜೋಡಿಸಿಲ್ಲ; ಆಯ್ಕೆಯ ಆಧಾರದ ಮೇಲೆ ಮಾದರಿ ಸಲಹೆ ತೋರಿಸಲಾಗುತ್ತದೆ.", addPhotoForGuide:"ಆರಂಭಿಸಲು ಬೆಳೆ ಫೋಟೋ ಸೇರಿಸಿ", sampleResponse:"ಮಾದರಿ ಸಲಹೆ", nearbyKicker:"ಸ್ಥಳೀಯ ಕೃಷಿ ನೆರವು", nearbyTitleText:"ಹತ್ತಿರದ ರೈತರು ಮತ್ತು ಅಂಗಡಿಗಳನ್ನು ಹುಡುಕಿ", nearbyIntro:"ನಿಮ್ಮ ಗ್ರಾಮ ಅಥವಾ ತಾಲ್ಲೂಕಿನ ರೈತ ಗುಂಪುಗಳು ಮತ್ತು ಗೊಬ್ಬರ ಅಂಗಡಿಗಳನ್ನು ಹುಡುಕಿ.", nearbyAreaLabel:"ಗ್ರಾಮ ಅಥವಾ ತಾಲ್ಲೂಕು", searchNearby:"ನಕ್ಷೆ ಹುಡುಕಾಟ ನವೀಕರಿಸಿ", farmerGroups:"ಹತ್ತಿರದ ರೈತರು ಮತ್ತು ರೈತ ಗುಂಪುಗಳು", farmerGroupsCopy:"ನಿಮ್ಮ ಪ್ರದೇಶದ ರೈತರು, ಸಹಕಾರ ಸಂಘಗಳು ಮತ್ತು ರೈತ ಉತ್ಪಾದಕ ಸಂಸ್ಥೆಗಳನ್ನು ಹುಡುಕಿ.", fertilizerShops:"ಗೊಬ್ಬರ ಮತ್ತು ಬೀಜ ಅಂಗಡಿಗಳು", fertilizerShopsCopy:"ಹತ್ತಿರದ ಕೃಷಿ ಸಾಮಗ್ರಿ ಅಂಗಡಿಗಳನ್ನು ಹುಡುಕಿ; ಹೋಗುವ ಮೊದಲು ದಾಸ್ತಾನು ವಿಚಾರಿಸಿ.", openMap:"ನಕ್ಷೆಯಲ್ಲಿ ಹುಡುಕಿ", mapPrivacy:"ಗೂಗಲ್ ನಕ್ಷೆ ಹೊಸ ಟ್ಯಾಬ್‌ನಲ್ಲಿ ತೆರೆಯುತ್ತದೆ. ನಕ್ಷೆ ಲಿಂಕ್ ತೆರೆದಾಗ ಮಾತ್ರ ನೀವು ನಮೂದಿಸಿದ ಸ್ಥಳ ಹುಡುಕಾಟಕ್ಕೆ ಸೇರುತ್ತದೆ. ಮಾಹಿತಿ ಅಪೂರ್ಣವಾಗಿರಬಹುದು; ಹೋಗುವ ಮೊದಲು ಕರೆ ಮಾಡಿ.", mapReady:"ನಕ್ಷೆ ಹುಡುಕಾಟ ನವೀಕರಿಸಲಾಗಿದೆ. ಕೆಳಗೆ ರೈತ ಗುಂಪು ಅಥವಾ ಅಂಗಡಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.", needPhoto:"ಫೋಟೋ ಮಾರ್ಗದರ್ಶನ ಆರಂಭಿಸಲು ಮೊದಲು ಬೆಳೆ ಫೋಟೋ ಸೇರಿಸಿ.", guidanceDryTitle:"ನೀರಿನ ಒತ್ತಡ ಇರಬಹುದು", guidanceDrySummary:"ಒಣಗುವ ಅಥವಾ ಬಾಡುವ ಬೆಳೆಗೆ ಇವು ಸಾಮಾನ್ಯ ಮೊದಲ ಹೆಜ್ಜೆಗಳು; ಇದು ರೋಗನಿರ್ಣಯವಲ್ಲ.", guidanceDry1:"ಹಾನಿಯಾದ ಮತ್ತು ಆರೋಗ್ಯಕರ ಗಿಡಗಳ ಫೋಟೋ ತೆಗೆದು, ಲಕ್ಷಣ ಆರಂಭವಾದ ದಿನವನ್ನು ಬರೆಯಿರಿ.", guidanceDry2:"ನೀರಾವರಿ ಬದಲಿಸುವ ಮೊದಲು ಮಣ್ಣಿನ ತೇವ ಮತ್ತು ಇತ್ತೀಚಿನ ಮಳೆಯನ್ನು ಪರಿಶೀಲಿಸಿ.", guidanceDry3:"ಹಾನಿ ಹರಡುತ್ತಿದ್ದರೆ ಸ್ಥಳೀಯ ಕೃಷಿ ಅಧಿಕಾರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ; ವರದಿ ಅವಧಿ ವಿಚಾರಿಸಿ.", guidancePestsTitle:"ಕೀಟ ಅಥವಾ ಎಲೆ ಹಾನಿ ಇರಬಹುದು", guidancePestsSummary:"ಈ ಮಾದರಿಯಲ್ಲಿ ಫೋಟೋ ಪರಿಶೀಲನೆ ಆಗುವುದಿಲ್ಲ. ಕಾರಣ ಖಚಿತವಾಗುವ ಮೊದಲು ರಾಸಾಯನಿಕ ಬಳಸಬೇಡಿ.", guidancePests1:"ಪೂರ್ಣ ಗಿಡದ ಜೊತೆಗೆ ಹಾನಿಯಾದ ಎಲೆಯ ಎರಡೂ ಬದಿಗಳ ಹತ್ತಿರದ ಫೋಟೋ ತೆಗೆದುಕೊಳ್ಳಿ.", guidancePests2:"ಸುರಕ್ಷಿತವಾಗಿದ್ದರೆ, ಕೃಷಿ ಅಧಿಕಾರಿಗೆ ತೋರಿಸಲು ಸಣ್ಣ ಮಾದರಿಯನ್ನು ಮುಚ್ಚಿದ ಚೀಲದಲ್ಲಿ ಇಡಿ.", guidancePests3:"ಕಾರಣ ಗುರುತಿಸಿ ಸೂಕ್ತ ಕ್ರಮ ಸೂಚಿಸಲು ಕೃಷಿ ಅಧಿಕಾರಿಯನ್ನು ಕೇಳಿ.", guidanceWaterTitle:"ಹೊಲದಲ್ಲಿ ನೀರು ನಿಂತಿದೆ", guidanceWaterSummary:"ನಿಂತ ನೀರು ಬೆಳೆಗೆ ಹಾನಿ ಮಾಡಬಹುದು. ನೀರು ಹರಿಸುವ ಅಥವಾ ಸಾಮಗ್ರಿ ಬಳಸುವ ಮೊದಲು ಸ್ಥಳೀಯ ಸಲಹೆ ಪಡೆಯಿರಿ.", guidanceWater1:"ವಿದ್ಯುತ್ ತಂತಿ, ಪಂಪ್ ಮತ್ತು ಮಲಿನ ನೀರಿನಿಂದ ಜನರು ಹಾಗೂ ಪ್ರಾಣಿಗಳನ್ನು ದೂರವಿಡಿ.", guidanceWater2:"ಹಾನಿಯಾದ ಪ್ರದೇಶ ಮತ್ತು ನೀರು ನಿಲ್ಲಲು ಆರಂಭಿಸಿದ ಸಮಯವನ್ನು ದಾಖಲಿಸಿ.", guidanceWater3:"ನೀರಿನ ಹರಿವು ಮತ್ತು ಬೆಳೆ ಚೇತರಿಕೆ ಸಲಹೆಗೆ ಸ್ಥಳೀಯ ಕೃಷಿ ಕಚೇರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ.", guidanceRapidTitle:"ವೇಗವಾಗಿ ಹರಡುವ ಹಾನಿಗೆ ಸ್ಥಳೀಯ ಪರಿಶೀಲನೆ ಬೇಕು", guidanceRapidSummary:"ಹಠಾತ್ ಬದಲಾವಣೆಗೆ ಹಲವು ಕಾರಣಗಳಿರಬಹುದು. ಈ ಮಾದರಿ ಕಾರಣ ಪತ್ತೆ ಮಾಡುವುದಿಲ್ಲ.", guidanceRapid1:"ಹೊಲದ ಫೋಟೋ ತೆಗೆದು ದಿನಾಂಕ, ಹವಾಮಾನ ಮತ್ತು ಇತ್ತೀಚೆಗೆ ಬಳಸಿದ ಸಾಮಗ್ರಿಗಳನ್ನು ಬರೆಯಿರಿ.", guidanceRapid2:"ಕಾರಣ ಗುರುತಿಸುವವರೆಗೆ ಸಿಂಪಡಣೆ ಅಥವಾ ರಾಸಾಯನಿಕ ಮಿಶ್ರಣ ಮಾಡಬೇಡಿ.", guidanceRapid3:"ಶೀಘ್ರವಾಗಿ ಕೃಷಿ ಅಧಿಕಾರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ; ವಿಮೆಯ ವರದಿ ಗಡುವು ಪರಿಶೀಲಿಸಿ."
+});
+
 let language = "en";
 let recognition = null;
 let latestPhotoUrl = "";
@@ -34,6 +43,32 @@ function showToast(message) {
   toastTimer = setTimeout(() => toast.classList.remove("show"), 2800);
 }
 
+function updateAnalysisPhoto() {
+  const frame = $("analysisPhoto");
+  frame.replaceChildren();
+  if (latestPhotoUrl) {
+    const image = document.createElement("img");
+    image.src = latestPhotoUrl;
+    image.alt = "Selected crop photo for the sample guidance flow";
+    frame.append(image);
+  } else {
+    const icon = document.createElement("span");
+    icon.className = "analysis-placeholder";
+    icon.textContent = "🌱";
+    const caption = document.createElement("small");
+    caption.dataset.i18n = "addPhotoForGuide";
+    caption.textContent = msg("addPhotoForGuide");
+    frame.append(icon, caption);
+  }
+}
+
+function updateMapSearchLinks() {
+  const area = $("nearbyArea").value.trim() || $("village").value.trim() || "Karnataka";
+  const mapUrl = (query) => `https://www.google.com/maps/search/?${new URLSearchParams({ api: "1", query: `${query} near ${area}` })}`;
+  $("farmerMapLink").href = mapUrl("farmers and farmer groups");
+  $("shopMapLink").href = mapUrl("fertilizer and seed shops");
+}
+
 $("languageToggle").addEventListener("click", () => setLanguage(language === "en" ? "kn" : "en"));
 $("startReport").addEventListener("click", () => $("reportSection").scrollIntoView({ behavior: "smooth", block: "start" }));
 
@@ -45,6 +80,8 @@ $("photoInput").addEventListener("change", (event) => {
   $("previewImage").src = latestPhotoUrl;
   $("photoName").textContent = file.name;
   $("photoPreview").hidden = false;
+  $("runPhotoAnalysis").disabled = false;
+  updateAnalysisPhoto();
   showToast(msg("photoAdded"));
 });
 $("removePhoto").addEventListener("click", () => {
@@ -53,6 +90,9 @@ $("removePhoto").addEventListener("click", () => {
   $("photoInput").value = "";
   $("photoPreview").hidden = true;
   $("photoName").textContent = msg("photoHint");
+  $("runPhotoAnalysis").disabled = true;
+  $("analysisOutput").hidden = true;
+  updateAnalysisPhoto();
   showToast(msg("photoRemoved"));
 });
 
@@ -81,6 +121,8 @@ $("reportForm").addEventListener("submit", (event) => {
   const cropName = $("crop").selectedOptions[0].textContent;
   const village = $("village").value.trim() || msg("noLocation");
   $("resultSummary").textContent = `${cropName} · ${village}`;
+  if (!$("nearbyArea").value.trim() || $("nearbyArea").value === "Davangere Taluk, Karnataka") $("nearbyArea").value = village;
+  updateMapSearchLinks();
   const photo = $("resultPhoto");
   photo.replaceChildren();
   if (latestPhotoUrl) {
@@ -95,7 +137,30 @@ $("reportForm").addEventListener("submit", (event) => {
   showToast(msg("reportReady"));
 });
 
+$("runPhotoAnalysis").addEventListener("click", () => {
+  if (!latestPhotoUrl) { showToast(msg("needPhoto")); return; }
+  const prefix = { dry: "guidanceDry", pests: "guidancePests", water: "guidanceWater", rapid: "guidanceRapid" }[$("criticalScenario").value];
+  $("analysisTitle").textContent = msg(`${prefix}Title`);
+  $("analysisSummary").textContent = msg(`${prefix}Summary`);
+  const steps = $("analysisSteps");
+  steps.replaceChildren();
+  for (let index = 1; index <= 3; index += 1) {
+    const item = document.createElement("li");
+    item.textContent = msg(`${prefix}${index}`);
+    steps.append(item);
+  }
+  $("analysisOutput").hidden = false;
+  $("analysisOutput").scrollIntoView({ behavior: "smooth", block: "nearest" });
+});
+
 $("editReport").addEventListener("click", () => $("reportSection").scrollIntoView({ behavior: "smooth", block: "start" }));
+
+$("nearbyArea").addEventListener("input", updateMapSearchLinks);
+$("nearbySearchForm").addEventListener("submit", (event) => {
+  event.preventDefault();
+  updateMapSearchLinks();
+  showToast(msg("mapReady"));
+});
 
 $("downloadSummary").addEventListener("click", () => {
   const lines = [

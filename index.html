@@ -68,12 +68,45 @@
 
       <section class="results-section" id="resultsSection" aria-live="polite" hidden>
         <div class="results-top"><div><span class="section-kicker" data-i18n="yourGuide">YOUR FIELD GUIDE</span><h2 data-i18n="resultsTitle">Here are some next steps</h2><p id="resultSummary"></p></div><button class="text-button" id="editReport" type="button" data-i18n="editReport">← Edit report</button></div>
+        <section class="photo-guide" aria-labelledby="photoGuideTitle">
+          <div class="photo-guide-copy">
+            <span class="ai-label"><span>✦</span><span data-i18n="photoGuideBadge">PHOTO GUIDANCE · DEMO</span></span>
+            <h3 id="photoGuideTitle" data-i18n="photoGuideTitle">Need help deciding what to do first?</h3>
+            <p data-i18n="photoGuideIntro">Choose the closest match and get a sample set of urgent next steps for your field.</p>
+            <label for="criticalScenario" data-i18n="scenarioLabel">What are you seeing?</label>
+            <select id="criticalScenario">
+              <option value="dry" data-i18n="scenarioDry">Severe wilting or dry leaves</option>
+              <option value="pests" data-i18n="scenarioPests">Pests, spots, or damage on leaves</option>
+              <option value="water" data-i18n="scenarioWater">Water standing in the field</option>
+              <option value="rapid" data-i18n="scenarioRapid">Damage spreading quickly</option>
+            </select>
+            <button class="primary-button photo-guide-button" id="runPhotoAnalysis" type="button" disabled><span data-i18n="getPhotoSteps">Get urgent next steps</span><span aria-hidden="true">→</span></button>
+            <p class="ai-demo-note" data-i18n="aiDemoNote">Prototype demo: your photo stays on this device. No AI model is connected yet, so this sample guidance is based on your selection.</p>
+          </div>
+          <div class="photo-guide-visual">
+            <div class="analysis-photo" id="analysisPhoto"><span class="analysis-placeholder">🌱</span><small data-i18n="addPhotoForGuide">Add a crop photo to start</small></div>
+            <div class="analysis-output" id="analysisOutput" hidden aria-live="polite">
+              <div class="analysis-output-heading"><span class="analysis-check">✓</span><div><small data-i18n="sampleResponse">SAMPLE RESPONSE</small><strong id="analysisTitle"></strong></div></div>
+              <p id="analysisSummary"></p>
+              <ol id="analysisSteps"></ol>
+            </div>
+          </div>
+        </section>
         <div class="results-grid">
           <article class="result-card analysis-card"><div class="card-heading"><span class="result-icon amber">◉</span><div><h3 data-i18n="fieldNotes">Field notes</h3><small data-i18n="demoAssessment">Sample observation · not an official assessment</small></div></div><div class="severity"><span class="severity-dot"></span><span data-i18n="possibleStress">Possible water stress</span></div><p data-i18n="stressCopy">Dry leaves can have several causes. A local agriculture officer can help confirm what is affecting your crop.</p><div class="result-photo" id="resultPhoto"><span>🌾</span><small data-i18n="photoNotAdded">No photo added</small></div></article>
           <article class="result-card"><div class="card-heading"><span class="result-icon green">✓</span><div><h3 data-i18n="supportOptions">Support to ask about</h3><small data-i18n="checkLocal">Availability depends on your location and current rules</small></div></div><ul class="support-list"><li><span>✓</span><div><strong data-i18n="relief">Drought relief</strong><small data-i18n="reliefCopy">Ask your taluk office whether relief is available in your area.</small></div></li><li><span>✓</span><div><strong data-i18n="insurance">Crop insurance</strong><small data-i18n="insuranceCopy">Check your policy, reporting window, and claim process.</small></div></li><li><span>✓</span><div><strong data-i18n="inputSupport">Input support</strong><small data-i18n="inputCopy">Ask the local agriculture office about current farmer support.</small></div></li></ul></article>
           <article class="result-card checklist-card"><div class="card-heading"><span class="result-icon blue">▤</span><div><h3 data-i18n="checklistTitle">Keep these details ready</h3><small data-i18n="checklistSub">A useful checklist for your next conversation</small></div></div><div class="checklist" id="checklist"><label><input type="checkbox" checked /><span data-i18n="check1">Crop and sowing date</span></label><label><input type="checkbox" /><span data-i18n="check2">Photos of the affected field</span></label><label><input type="checkbox" /><span data-i18n="check3">Land or tenancy details</span></label><label><input type="checkbox" /><span data-i18n="check4">Bank details, if requested by the scheme</span></label><label><input type="checkbox" /><span data-i18n="check5">Insurance policy, if enrolled</span></label></div><button id="downloadSummary" class="outline-button" type="button"><span aria-hidden="true">↓</span><span data-i18n="saveSummary">Save or print my summary</span></button></article>
           <article class="result-card crops-card"><div class="card-heading"><span class="result-icon green">♧</span><div><h3 data-i18n="cropIdeas">Water-wise crop ideas</h3><small data-i18n="cropIdeasSub">Ideas to discuss before choosing a crop</small></div></div><div class="crop-ideas"><div><span class="crop-emoji">🫘</span><span><strong data-i18n="horseGram">Horse gram</strong><small data-i18n="horseGramSub">Often considered for lower-water conditions</small></span><span class="idea-arrow">→</span></div><div><span class="crop-emoji">🌾</span><span><strong data-i18n="foxtail">Foxtail millet</strong><small data-i18n="foxtailSub">Ask about local season and seed availability</small></span><span class="idea-arrow">→</span></div><div><span class="crop-emoji">🫘</span><span><strong data-i18n="chickpea">Chickpea</strong><small data-i18n="chickpeaSub">Check soil, rainfall, and sowing window</small></span><span class="idea-arrow">→</span></div></div><p class="crop-caveat" data-i18n="cropCaveat">These are general ideas, not a forecast or a guarantee of yield. Ask locally before planting.</p></article>
         </div>
+        <section class="nearby-help" aria-labelledby="nearbyTitle">
+          <div class="nearby-heading"><div><span class="section-kicker" data-i18n="nearbyKicker">LOCAL FARM SUPPORT</span><h3 id="nearbyTitle" data-i18n="nearbyTitleText">Find farmers and shops near you</h3><p data-i18n="nearbyIntro">Search local farmer groups and fertilizer shops around your village or taluk.</p></div><span class="nearby-pin" aria-hidden="true">⌖</span></div>
+          <form class="nearby-form" id="nearbySearchForm"><label for="nearbyArea" data-i18n="nearbyAreaLabel">Village or taluk</label><div class="nearby-search-row"><input id="nearbyArea" value="Davangere Taluk, Karnataka" autocomplete="address-level2" /><button class="primary-button" type="submit"><span data-i18n="searchNearby">Search nearby</span><span aria-hidden="true">→</span></button></div></form>
+          <div class="nearby-cards">
+            <article class="nearby-card"><span class="nearby-card-icon">♧</span><div><h4 data-i18n="farmerGroups">Nearby farmer groups</h4><p data-i18n="farmerGroupsCopy">Find farmer groups, cooperatives, and producer organisations in your area.</p><a id="farmerMapLink" class="map-search-link" href="https://www.google.com/maps/search/?api=1&query=farmer+groups+near+Davangere+Taluk%2C+Karnataka" target="_blank" rel="noopener noreferrer"><span data-i18n="openMap">Open map results</span><span aria-hidden="true">↗</span></a></div></article>
+            <article class="nearby-card"><span class="nearby-card-icon fertilizer-icon">▤</span><div><h4 data-i18n="fertilizerShops">Fertilizer and seed shops</h4><p data-i18n="fertilizerShopsCopy">Search for nearby farm-input shops and check stock before travelling.</p><a id="shopMapLink" class="map-search-link" href="https://www.google.com/maps/search/?api=1&query=fertilizer+shops+near+Davangere+Taluk%2C+Karnataka" target="_blank" rel="noopener noreferrer"><span data-i18n="openMap">Open map results</span><span aria-hidden="true">↗</span></a></div></article>
+          </div>
+          <p class="map-privacy" data-i18n="mapPrivacy">Google Maps opens in a new tab. Your entered area is included in the search only when you open a map link. Listings may be incomplete; call ahead to confirm.</p>
+        </section>
         <div class="results-footer"><span>✦</span><p data-i18n="resultsDisclaimer">This demo does not verify eligibility, diagnose crop disease, or file a claim. Please confirm details with your local agriculture office.</p></div>
       </section>
     </main>
