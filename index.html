@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#113f2d" />
+    <meta name="description" content="A Kannada-first drought relief and claim guide for small farmers." />
+    <title>Bara Mitra — your farm support companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Bara Mitra home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 42V22M24 32c-9 0-15-5-16-14 8 0 14 5 16 14Zm0-8c1-9 7-14 16-14-1 9-7 14-16 14Z"/><path d="M8 39h32M13 34h22"/></svg></span>
+        <span><strong>Bara Mitra</strong><small>ಬರ ಮಿತ್ರ</small></span>
+      </a>
+      <div class="top-actions"><span class="offline-pill"><i></i><span data-i18n="ready">Ready to help</span></span><button id="languageToggle" class="language-toggle" type="button" aria-label="Switch language">ಕನ್ನಡ <span>⌄</span></button></div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="sun-icon">☀</span><span data-i18n="eyebrow">A calmer next step for your farm</span></div>
+          <h1 data-i18n="heroTitle">When the rains fail,<br /><em>you have a friend.</em></h1>
+          <p data-i18n="heroBody">Tell us what happened in your field. Bara Mitra helps you record the damage and understand what to do next—in Kannada or English.</p>
+          <button class="primary-button" id="startReport" type="button"><span data-i18n="start">Start a crop report</span><span aria-hidden="true">→</span></button>
+          <div class="trust-note"><span aria-hidden="true">🔒</span><span data-i18n="trust">Your report stays on this device in this demo.</span></div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Illustration of crops growing in a field under the sun">
+          <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+          <div class="field field-back"></div><div class="field field-front"></div>
+          <div class="crop crop-a"><b></b><i></i><i></i></div><div class="crop crop-b"><b></b><i></i><i></i></div><div class="crop crop-c"><b></b><i></i><i></i></div><div class="crop crop-d"><b></b><i></i><i></i></div>
+          <div class="hero-tag"><span class="tag-icon">✳</span><span><strong data-i18n="tagTitle">One step at a time</strong><small data-i18n="tagBody">From field notes to a clear checklist</small></span></div>
+        </div>
+      </section>
+
+      <section class="steps-section" aria-labelledby="stepsHeading">
+        <div class="section-heading"><div><span class="section-kicker" data-i18n="simple">SIMPLE, PRACTICAL SUPPORT</span><h2 id="stepsHeading" data-i18n="stepsTitle">A little help, right when you need it</h2></div><p data-i18n="stepsBody">No forms to figure out alone. Just follow along.</p></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><span class="step-icon voice-icon">◖))</span><h3 data-i18n="step1Title">Tell your story</h3><p data-i18n="step1Body">Speak or type what you see in your field, in the language you’re comfortable with.</p></article>
+          <article class="step-card"><span class="step-number">02</span><span class="step-icon photo-icon">▧</span><h3 data-i18n="step2Title">Add field evidence</h3><p data-i18n="step2Body">Attach a crop photo and add your village details to keep everything together.</p></article>
+          <article class="step-card"><span class="step-number">03</span><span class="step-icon guide-icon">✓</span><h3 data-i18n="step3Title">See what to do next</h3><p data-i18n="step3Body">Review possible support, a simple document checklist, and water-wise crop ideas.</p></article>
+        </div>
+      </section>
+
+      <section class="report-section" id="reportSection" aria-labelledby="reportTitle">
+        <div class="report-intro"><span class="section-kicker" data-i18n="guided">YOUR FIELD REPORT</span><h2 id="reportTitle" data-i18n="reportTitleText">Let’s start with what you noticed</h2><p data-i18n="reportIntro">You can change any answer. This prototype gives sample guidance for demonstration.</p></div>
+        <div class="report-layout">
+          <form class="report-form" id="reportForm">
+            <div class="field-label-row"><label for="story" data-i18n="storyLabel">What happened in your field?</label><button class="voice-button" id="voiceButton" type="button"><span aria-hidden="true">🎙</span><span data-i18n="voice">Speak instead</span></button></div>
+            <textarea id="story" rows="3" data-placeholder="storyPlaceholder" placeholder="For example: My maize leaves are drying and the soil is very dry…">My maize leaves are drying and the soil is very dry.</textarea>
+            <div class="form-grid">
+              <div class="form-field"><label for="crop" data-i18n="cropLabel">What crop are you growing?</label><select id="crop"><option value="maize" data-i18n="maize">Maize</option><option value="ragi" data-i18n="ragi">Ragi</option><option value="paddy" data-i18n="paddy">Paddy</option><option value="pigeonpea" data-i18n="pigeonpea">Pigeon pea</option><option value="other" data-i18n="other">Another crop</option></select></div>
+              <div class="form-field"><label for="village" data-i18n="villageLabel">Village or taluk</label><input id="village" value="Davangere Taluk" autocomplete="address-level2" /></div>
+            </div>
+            <label class="upload-box" for="photoInput"><span class="upload-icon">＋</span><span><strong data-i18n="photoLabel">Add a field photo</strong><small id="photoName" data-i18n="photoHint">Choose a clear photo of the affected crop (optional)</small></span><span class="upload-action" data-i18n="choosePhoto">Choose photo</span><input id="photoInput" type="file" accept="image/*" /></label>
+            <div id="photoPreview" class="photo-preview" hidden><img id="previewImage" alt="Selected crop photo preview" /><button type="button" id="removePhoto" aria-label="Remove photo">×</button></div>
+            <button class="primary-button submit-button" type="submit"><span data-i18n="getGuide">Show my next steps</span><span aria-hidden="true">→</span></button>
+            <p class="privacy-line" data-i18n="privacy">No account needed. Your details are not sent anywhere.</p>
+          </form>
+          <aside class="report-aside"><div class="aside-icon">🌱</div><h3 data-i18n="asideTitle">Your field, your pace</h3><p data-i18n="asideBody">A photo can help you remember what the crop looked like. Your report is a starting point for a conversation with your local agriculture officer.</p><div class="aside-divider"></div><div class="aside-foot"><span>✦</span><span data-i18n="asideFoot">Bara Mitra is here to help you ask the right questions.</span></div></aside>
+        </div>
+      </section>
+
+      <section class="results-section" id="resultsSection" aria-live="polite" hidden>
+        <div class="results-top"><div><span class="section-kicker" data-i18n="yourGuide">YOUR FIELD GUIDE</span><h2 data-i18n="resultsTitle">Here are some next steps</h2><p id="resultSummary"></p></div><button class="text-button" id="editReport" type="button" data-i18n="editReport">← Edit report</button></div>
+        <div class="results-grid">
+          <article class="result-card analysis-card"><div class="card-heading"><span class="result-icon amber">◉</span><div><h3 data-i18n="fieldNotes">Field notes</h3><small data-i18n="demoAssessment">Sample observation · not an official assessment</small></div></div><div class="severity"><span class="severity-dot"></span><span data-i18n="possibleStress">Possible water stress</span></div><p data-i18n="stressCopy">Dry leaves can have several causes. A local agriculture officer can help confirm what is affecting your crop.</p><div class="result-photo" id="resultPhoto"><span>🌾</span><small data-i18n="photoNotAdded">No photo added</small></div></article>
+          <article class="result-card"><div class="card-heading"><span class="result-icon green">✓</span><div><h3 data-i18n="supportOptions">Support to ask about</h3><small data-i18n="checkLocal">Availability depends on your location and current rules</small></div></div><ul class="support-list"><li><span>✓</span><div><strong data-i18n="relief">Drought relief</strong><small data-i18n="reliefCopy">Ask your taluk office whether relief is available in your area.</small></div></li><li><span>✓</span><div><strong data-i18n="insurance">Crop insurance</strong><small data-i18n="insuranceCopy">Check your policy, reporting window, and claim process.</small></div></li><li><span>✓</span><div><strong data-i18n="inputSupport">Input support</strong><small data-i18n="inputCopy">Ask the local agriculture office about current farmer support.</small></div></li></ul></article>
+          <article class="result-card checklist-card"><div class="card-heading"><span class="result-icon blue">▤</span><div><h3 data-i18n="checklistTitle">Keep these details ready</h3><small data-i18n="checklistSub">A useful checklist for your next conversation</small></div></div><div class="checklist" id="checklist"><label><input type="checkbox" checked /><span data-i18n="check1">Crop and sowing date</span></label><label><input type="checkbox" /><span data-i18n="check2">Photos of the affected field</span></label><label><input type="checkbox" /><span data-i18n="check3">Land or tenancy details</span></label><label><input type="checkbox" /><span data-i18n="check4">Bank details, if requested by the scheme</span></label><label><input type="checkbox" /><span data-i18n="check5">Insurance policy, if enrolled</span></label></div><button id="downloadSummary" class="outline-button" type="button"><span aria-hidden="true">↓</span><span data-i18n="saveSummary">Save or print my summary</span></button></article>
+          <article class="result-card crops-card"><div class="card-heading"><span class="result-icon green">♧</span><div><h3 data-i18n="cropIdeas">Water-wise crop ideas</h3><small data-i18n="cropIdeasSub">Ideas to discuss before choosing a crop</small></div></div><div class="crop-ideas"><div><span class="crop-emoji">🫘</span><span><strong data-i18n="horseGram">Horse gram</strong><small data-i18n="horseGramSub">Often considered for lower-water conditions</small></span><span class="idea-arrow">→</span></div><div><span class="crop-emoji">🌾</span><span><strong data-i18n="foxtail">Foxtail millet</strong><small data-i18n="foxtailSub">Ask about local season and seed availability</small></span><span class="idea-arrow">→</span></div><div><span class="crop-emoji">🫘</span><span><strong data-i18n="chickpea">Chickpea</strong><small data-i18n="chickpeaSub">Check soil, rainfall, and sowing window</small></span><span class="idea-arrow">→</span></div></div><p class="crop-caveat" data-i18n="cropCaveat">These are general ideas, not a forecast or a guarantee of yield. Ask locally before planting.</p></article>
+        </div>
+        <div class="results-footer"><span>✦</span><p data-i18n="resultsDisclaimer">This demo does not verify eligibility, diagnose crop disease, or file a claim. Please confirm details with your local agriculture office.</p></div>
+      </section>
+    </main>
+    <footer><a class="footer-brand" href="#top">Bara Mitra <span>·</span> ಬರ ಮಿತ್ರ</a><span data-i18n="footer">Built for clearer conversations and more confident next steps.</span><a href="#reportSection" data-i18n="footerHelp">Start a report ↑</a></footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
